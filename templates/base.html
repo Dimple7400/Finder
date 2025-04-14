@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- constom css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<style>
+  
+</style>
+<body>
+<!-- Start-Navbar -->
+<div class="navgation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">Finder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item btn text-dark" href="{% url 'books' %}">Books</a></li>
+                  <li><a class="dropdown-item btn text-dark" href="{% url 'images' %}">Images</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-5" href="{% url 'contect' %}">Contact Us</a>
+              </li> 
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          <ul class="d-flex">
+            <li class="nav-item list-unstyled mt-3">
+              <a class="nav-link" href="">{{request.user}}</a>
+            </li>
+            <li class="nav-item list-unstyled mt-3">
+              <a class="nav-link" href="{% url 'cart' %}">wislist</a>
+            </li>
+            <li class="nav-item list-unstyled mt-3">
+              <a class="nav-link" href="{% url 'log_out' %}">Logout</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+<!-- End-Navbar -->
+
+{% block content %}
+{% endblock content %}
+<!-- footer -->
+<footer class="footer py-5 mt-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <div class="footer-image">
+            <img src="/static/img/Bookslogo.svg">
+            <p class="my-4">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
+            <h4>A books is a gift you can open again and again</h4>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled my-4">
+            <li class="mb-2"><a href="">Home</a></li>
+            <li class="mb-2"><a href="/docs/5.0/">About us</a></li>
+            <li class="mb-2"><a href="/docs/5.0/">Books</a></li>
+            <li class="mb-2"><a href="/docs/5.0/examples/">Categories</a></li>
+            <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Categories</h5>
+          <ul class="list-unstyled my-4">
+            <li class="mb-2"><a href="">Novel Books</a></li>
+            <li class="mb-2"><a href="">Poetry Books</a></li>
+            <li class="mb-2"><a href="">Political Books</a></li>
+            <li class="mb-2"><a href="">History Books</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Social Media</h5>
+          <ul class="list-unstyled my-4">
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Facebook</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Instagram</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/icons">Twitter</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/rfs">Linkedin</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Costumers</h5>
+          <ul class="list-unstyled my-4">
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Store List</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Opening Hour</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/icons">Return Policy</a></li>
+            <li class="mb-2"><a href="https://github.com/twbs/rfs">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- footer -->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

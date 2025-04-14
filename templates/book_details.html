@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="book_details my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {% if book.volumeInfo.imageLinks.thumbnail %}
+                   <img src="{{ book.volumeInfo.imageLinks.thumbnail }}" class="img-fluid my-3" alt="Cover" style="height: 40rem;">
+                {% endif %}
+            </div>
+            <div class="col-lg-6">
+                <div class="card p-4 " style="border: none;">
+                    <h2>{{ book.volumeInfo.title }}</h2>
+                    <p><strong>Authors:</strong> {{ book.volumeInfo.authors|join:", " }}</p>
+                    <p><strong>Published:</strong> {{ book.volumeInfo.publishedDate }}</p>
+                    <p><strong>Publisher:</strong> {{ book.volumeInfo.publisher }}</p>
+                
+                    {% if book.volumeInfo.description %}
+                        <p class="mt-3">{{ book.volumeInfo.description|safe }}</p>
+                    {% else %}
+                        <p class="text-muted">No description available.</p>
+                    {% endif %}
+
+                    <div class="book-button my-3">
+                        <a href="{% url 'add_to_cart' book.id %}" class="text-decoration-none text-light">Wish List</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

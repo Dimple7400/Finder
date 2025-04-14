@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grand+Hotel&family=Grey+Qo&family=Imperial+Script&family=Lobster&family=Meow+Script&family=Playwrite+IN:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Grand+Hotel&family=Grey+Qo&family=Imperial+Script&family=Lobster&family=Meow+Script&family=Playwrite+IN:wght@100..400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+ /* Start-navigation */
+ .navgation .navbar{
+    background-color: rgb(198, 125, 17);
+ }
+ .navgation .navbar .navbar-brand{
+    font-family: "Imperial Script", cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: bisque;
+ }
+ .navgation .navbar .nav-item a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+ }
+ /* End-navigation */
+/* Start-banner */
+.carousel .carousel-inner .carousel-caption h1{
+font-size: 60px;
+font-family: 'Times New Roman', Times, serif;
+text-shadow: none;
+text-align: justify;
+}
+.carousel-caption {
+right: 0;
+bottom: 0;
+left: 50%;
+top: 0;
+text-align: justify;
+padding: 0px 4% 0px 5%;
+margin : 10% 0px 
+}
+.carousel .carousel-inner .carousel-caption h1 span{
+    font-size: 70px;
+    color: rgb(198, 125, 17);
+}
+.carousel .carousel-inner .carousel-caption p{
+    font-weight: 500;
+    word-spacing: 5px;
+    font-size: 25px;
+    font-family: "Satisfy", cursive;
+}
+.carousel .carousel-inner .carousel-caption a{
+border: 1px solid rgb(198, 125, 17);
+padding: 2% 4%;
+background-color: rgb(198, 125, 17);
+font-weight: 500;
+border-radius: 30px;
+}
+@media(max-width:915px){
+  .carousel .carousel-inner .carousel-caption h1{
+    font-size: 50px;
+  }
+  .carousel .carousel-inner .carousel-caption h1 span {
+    font-size: 50px;
+  }
+  .carousel .carousel-inner .carousel-caption h4{
+    font-size: 25px;
+  }
+  .carousel .carousel-inner .carousel-caption p{
+    font-size: 21px;
+  }
+  .carousel .carousel-inner .carousel-caption a{
+    padding: 6% 11%;
+  }
+}
+/* End-banner */
+
+/* about */
+.about_us{
+margin: 50px 0px;
+}
+.about_us .about_text{
+    padding: 0 5%;
+}
+.about_us .about_text h1{
+text-shadow: 5px 5px 10px wheat;
+font-family: "Imperial Script", cursive;
+font-size: 65px;
+}
+.about_us .about_text p{
+line-height: 2rem;
+}
+.about_us .about_txt h1{
+text-shadow: 5px 5px 10px wheat;
+font-family: "Imperial Script", cursive;
+font-size: 65px;
+}
+.about_us .about_topic h1{
+color: rgb(198, 125, 17);
+font-family: "Dancing Script", cursive;
+font-size: 70px;
+font-weight: 900;
+margin: 0px 0px 5% 0px;
+}
+/* End-about */
+
+/* Start-show */
+.show .show-book{
+  border: 10px solid whitesmoke;
+  border-radius: 20px;
+}
+.show .show-book{
+  background-image: url("/static/img/book1.jpg");
+  height: 40rem;
+  background-position: center;
+}
+.show .show-img{
+  background-image: url("/static/img/images3.jpg");
+  height: 40rem;
+  background-position: center;
+}
+.show .show-img{
+  border: 10px solid whitesmoke;
+  border-radius: 20px;
+}
+.show .show-overlay{
+  border: 10px solid whitesmoke;
+}
+.show .show-overlay{
+  background-color: rgb(0,0,0,0.5);
+  height: 40rem;
+}
+.show  .show-overlay h1{
+  font-family: "Imperial Script", cursive;
+  color: bisque;
+  font-size: 150px;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgb(198, 125, 17);
+
+}
+.show .show-overlay a{
+  padding: 20px 78px;
+    background-color: bisque;
+    border-radius: 35px;
+    font-size: 20px ;
+    font-weight: 600;
+}
+.show .show-overlay a:hover{
+  font-size: 22px;
+  box-shadow: 5px 5px 10px bisque;
+  color: bisque;
+  background-color: rgb(198, 125, 17);
+}
+@media(max-width:915px){
+  .show .show-overlay h1 {
+    font-size: 62px;
+  }
+  .show .show-overlay a {
+    padding: 11px 33px;
+  }
+  .show .show-img{
+    height: 25rem;
+  }
+  .show .show-book{
+    height: 25rem;
+  }
+  .show .show-overlay {
+    height: 25rem;
+  }
+}
+/* End-show */
+
+
+/* Start-footer */
+.footer{
+    background-color: rgb(198, 125, 17);
+}
+.footer .footer-image p{
+  font-size: 18px;
+}
+.footer .footer-image h4{
+    color: white;
+     
+     font-weight: 600;
+}
+.footer a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.footer h5{
+    color: white;
+}
+@media(max-width:915px){
+  .footer h5{
+    font-size: 19px;
+  }
+}
+/* End-footer */
+
+/* Start-books */
+ .search-books input[type=text]{
+    width: 45%;
+    height: 6rem;
+    border-radius: 10px;
+}
+.search-books input[type=text]::placeholder{
+    font-size: 20px;
+    padding: 10px;
+}
+.search-books .btn{
+    width: 10%;
+    height: 94px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.books .card{
+    border: 10px solid rgb(248, 245, 245);
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.books .card img{
+    border: 20px solid rgb(248, 245, 245);
+    width: 100%;
+    height: 20rem;
+    transition: 0.3s;
+    border-radius: 20px;
+    
+}
+.books .card img:hover{
+    transform: scale(1.1);
+}
+.book_details a{
+  background-color: rgb(198, 125, 17);
+  padding: 16px 27px;
+  font-weight: 600;
+}
+@media(max-width:915px){
+  .search-books input[type=text] {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+  }
+  .search-books .btn{
+    
+    height: 3rem;
+    margin: 5px 0px;
+    width: 50%;
+  }
+}
+/* End-books */
+
+/* Strat-images */
+.images img{
+    border-radius: 20px;
+}
+.images img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* End-images */
+
+/* Start signup and login css */
+.loginbox{
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 20%;
+  right: 40%;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+@media(max-width:915px){
+  .loginbox {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 29%;
+  right: 12%;
+  }
+}
+.icon{
+  background-color: red;
+  color: #fff;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  padding: 25px 0px;
+  margin: auto;
+  border-radius: 50%;
+  top: -50px;
+  position: absolute;
+  left: calc(50% - 50px);
+
+}
+.login{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+}
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+.loginbox input[type="text"], input[type="password"]:hover{
+  outline: none;
+}
+.loginbox form button[type="submit"]{
+  padding: 11px 104px;
+}
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkcyan;
+
+}
+.loginbox a:hover{
+ color: aquamarine;
+
+}
+/* End signup and login css */
+
+/* Start-about_page-css */
+.page{
+  background-color: bisque;
+  padding: 15% 0%;
+}
+.page .breadcrumb{
+    font-size: 70px;
+    font-family: "Imperial Script", cursive;
+    font-weight: 700;
+}
+.page .breadcrumb a{
+  text-decoration: none;
+  color: rgb(198, 125, 17);
+}
+/* End-about_page-css */
+
+/* Start-contect_page-css */
+/* End-contect_page-css */
+
+/* Start-wishlist_page-css */
+.wiselist .card{
+  border: 20px solid whitesmoke;
+}
+.wiselist .card img{
+  border: 20px solid whitesmoke;
+}
+/* End-wishlist_page-css */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- constom css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<style>
+body{
+  background-image: url(/static/img/images.png);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  font-family: sans-serif;
+
+}
+</style>
+<body>
+<div class="loginbox">
+    <h1 class="icon"><i class="fa-solid fa-user 2x"></i><h1>
+    <h1 class="login">Login Here</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter username">
+        <p>password</p>
+        <input type="password" name="password" placeholder="Enter password">
+        <button type="submit">Login</button><br>
+        <a href="{% url 'sign_up' %}">Create a account</a>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item" ><a href="{% url 'about' %}">About</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- about_us -->
+<section class="about_us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+            <div class="col-lg-6">
+                <div class="about_book mb-5">
+                    <img src="/static/img/about_books.jpg" class="img-fluid" style="height: 55vh; width: 100%;">
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="about_text mb-5">
+                    <h1>You're never alone when you're reading a book</h1>
+                    <p class="mt-4">The power to be found between the pages of a book is formidable, indeed. And these 80 inspiring quotes about books
+                         and importance of reading are here to remind you of that. From beloved bestsellers to iconic celebrities, 
+                         these quotes exemplify the benefits of reading and of a good books to comfort, challenge, and inspire you. For, 
+                         as author Anna Quindlen says, "Books are the plane, and the train, and the road. They are the destination, and the journey.
+                          They are home.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="about_txt my-5">
+                    <h1>Capturing the beauty of your everyday life</h1>
+                    <p class="mt-4">I believe that funny pictures tell a story that only you and couple friends know. There is a picture of 
+                        my friend that has two feminine products up his nose. It makes me laugh so hard every time tha
+                        t I’m always asked to retell the story.</p>
+                    <p>I believe that taking pictures, recording videos, and editing are my hobbies, my life.</p>
+                    <p>I believe that life should be captured, saved, and cherished.</p>
+                    <p>I believe in capturing moments.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="about_photo my-5">
+                    <img src="/static/img/about_photo.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about_us -->
+{% endblock content %}

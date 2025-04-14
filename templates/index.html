@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- banner -->
+<section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/img/reading-books.png" class="img-fluid" alt="..." style="height: 90vh; width: 60%;">
+          <div class="carousel-caption d-md-block text-dark">
+            <h4 class="text-uppercase bg-light text-secondary d-inline-block py-2 px-2">embed pdf Feature</h4>
+            <h1 class="text-dark fw-bold my-2">Read<span class="fw-bold"> PDF BOOKS</span><br> online</h1>
+            <p class="text-secondary my-3 ">Let your customers read books online without leaving your website</p>
+            <a href="{% url 'books' %}" class="btn text-white">Read Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/static/img/girl-searching-online.png" class="d-block mt-5" alt="..." style="height: 80vh; width: 50%;">
+          <div class="carousel-caption  d-md-block text-dark">
+            <h4 class="text-uppercase bg-light text-secondary d-inline-block py-2 px-2">embed pdf Feature</h4>
+            <h1 class="text-dark fw-bold my-2">ISBN<span class="fw-bold"> Search </span><br>Feature</h1>
+            <p class="text-secondary my-3 ">Search books using ISBN numbers or AUthor names and save your time</p>
+            <a href="{% url 'books' %}" class="btn text-white">Read Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/static/img/girl-reading-books-online.png" class="d-block mt-5" alt="..." style="height: 80vh; width: 50%;">
+          <div class="carousel-caption  d-md-block text-dark">
+            <h4 class="text-uppercase bg-light text-secondary d-inline-block py-2 px-2">embed pdf Feature</h4>
+            <h1 class="text-dark fw-bold my-2">Over<span class="fw-bold"> 12 million</span><br>books</h1>
+            <p class=" text-secondary my-3 ">Start your learning journey by browsing millions of books from our library</p>
+            <a href="{% url 'books' %}" class="btn text-white">Read Now</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+    <!-- about_us -->
+    <section class="about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_topic">
+                        <h1 class="text-center">About Us</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_book mb-5">
+                        <img src="/static/img/about_books.jpg" class="img-fluid" style="height: 55vh; width: 100%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="about_text mb-5">
+                        <h1>You're never alone when you're reading a book</h1>
+                        <p class="mt-4">The power to be found between the pages of a book is formidable, indeed. And these 80 inspiring quotes about books
+                             and importance of reading are here to remind you of that. From beloved bestsellers to iconic celebrities, 
+                             these quotes exemplify the benefits of reading and of a good books to comfort, challenge, and inspire you. For, 
+                             as author Anna Quindlen says, "Books are the plane, and the train, and the road. They are the destination, and the journey.
+                              They are home.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="about_txt my-5">
+                        <h1>Capturing the beauty of your everyday life</h1>
+                        <p class="mt-4">I believe that funny pictures tell a story that only you and couple friends know. There is a picture of 
+                            my friend that has two feminine products up his nose. It makes me laugh so hard every time tha
+                            t I’m always asked to retell the story.</p>
+                        <p>I believe that taking pictures, recording videos, and editing are my hobbies, my life.</p>
+                        <p>I believe that life should be captured, saved, and cherished.</p>
+                        <p>I believe in capturing moments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="about_photo my-5">
+                        <img src="/static/img/about_photo.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End-about -->
+<div class="show py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+         <div class="show-book text-center">
+            <div class="show-overlay">
+              <h1 class="my-5 pt-5">Books</h1>
+              <a href="{% url 'books' %}" class="btn text-center">See Books</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-6">
+         <div class="show-img text-center">
+          <div class="show-overlay">
+              <h1 class="my-5 pt-5">Photos</h1>
+              <a href="{% url 'images' %}" class="btn">See Photos</a>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
