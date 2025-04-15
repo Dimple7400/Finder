@@ -381,4 +381,12 @@ margin: 0px 0px 5% 0px;
 .wiselist .card img{
   border: 20px solid whitesmoke;
 }
+.wiselist .card{
+  position: relative;
+}
+.wiselist .card .remove_icon{
+  position: absolute;
+  right: 15%;
+  top: 10%;
+}
 /* End-wishlist_page-css */
