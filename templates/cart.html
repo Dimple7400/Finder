@@ -10,12 +10,14 @@
                 <div class="card">
                     <img src="{{ item.thumbnail }}" class="card-img-top" alt="..." style="height: 20rem;">
                     <h5 class="text-center my-4">{{item.title | truncatechars:25}}</h5>
-                    <a href="{% url 'delete_cart' item.id %}">Remove</a>
+                    <div class="remove_icon">
+                        <a href="{% url 'delete_cart' item.id %}"><i class="fa-solid fa-xmark fa-2x text-secondary"></i></a>
+                    </div>
                 </div>
             </div>
             {% endfor %}
             {% else %}
-            <p>Your cart is empty.</p>
+            <h1>Add your favourite books</h1>
             {% endif %}
         </div>
     </div>
